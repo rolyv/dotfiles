@@ -223,6 +223,20 @@ fi
 ## ------------------------------
 ## -- 3) User-customized code  --
 ## ------------------------------
-
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
+
+
+## ------------------------------
+## -- 4) Environment variables --
+## ------------------------------
+# Original version of this repo (startup-class) had environment variables defined in .bash_profile
+# That works fine when logging in directly via terminal (e.g. ctrl+alt+f1) or via ssh, but
+# the display manager (e.g. gdm) decides what to source on login and does not include .bash_profile.
+# Some display mangers include .profile, but not necessarily. Just easier to include them in .bashrc
+export PATH=$PATH
+export PATH=$HOME/bin:$PATH
+export PATH=/usr/bin:$PATH
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+export PATH=$HOME/anaconda/bin:$PATH
