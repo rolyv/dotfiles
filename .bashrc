@@ -240,4 +240,4 @@ export PATH=/usr/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 export PATH=$HOME/anaconda/bin:$PATH
-export PATH=/opt/idea-IC-141.1532.4:$PATH
+export PATH=/opt/idea-IC-141.1532.4/bin:$PATH
